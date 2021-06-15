@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    
+  }
+  body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: auto;
+  background-color:rgb(245, 167, 71);
+  }
+  h1{
+      text-align:center;
+      font-size: 2vw;
+      margin-top: 10vh;
+      color:black;
+  }
+
+  table {
+    border-collapse:separate;
+    border:solid rgb(29, 28, 28) 2px;
+    box-shadow: 4px 8px 12px black;
+    width:70vw;
+    height:20vh;
+    margin-top:5vh;
+    background-color: burlywood;
+    margin-left: 15vw;
+}
+
+td, th {
+    border-left:solid black 2px;
+    border-top:solid black 2px;
+    text-align: center;
+    height: 10vh;
+    font-size: 28px;
+    box-shadow: 3px 6px 9px black;
+   
+}
+
+th {
+    border-top: none;
+   
+}
+
+td:first-child, th:first-child {
+    border-left: none;
+}
+
+.dot {
+    height: 4vh;
+    width: 2vw;
+    background-color: rgb(75, 156, 75);
+    border-radius: 30%;
+    display: inline-block;
+    border:2px solid burlywood;
+    
+  }
+  .dot1 {
+    height: 4vh;
+    width: 2vw;
+    background-color: rgb(231, 229, 71);
+    border-radius: 30%;
+    display: inline-block;
+    border:2px solid burlywood;
+    
+  }
+  .dots{
+        height: 5vh;
+        width: 9vw;
+        text-align: left;
+        float: right;
+    }
+    .foot{
+        text-align: center;
+        font-size: 1.5vw;
+        margin-top: 4vh;
+    }
+    #btn{
+        margin: 1.8vh 1.3vw;
+        border-radius: 5px;
+        padding: 1.5vh 3vw;
+     }
+     #btn:hover{
+        background-color: black;
+        color:white;
+     }
+     .insert{
+        position: absolute;
+        top:-10vh;
+        width: 100%;
+        height: 5vh;
+        color:black;
+        padding: 1vh 1vw;
+        background-color: rgb(184, 243, 184);
+     }

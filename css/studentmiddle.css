@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    
+  }
+  body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: auto;
+  background-color: rgb(245, 167, 71);
+  }
+  h2{
+    font-size: 40px;
+    animation: heading 1s forwards;
+    margin-right: 60vw;
+  }
+  @keyframes heading {
+    0%{
+      transform: scale(0.5,0.5);
+    }
+    50%{
+      transform: scale(0.8,0.8);
+    }
+    100%{
+      transform: scale(0.8,0.8);
+    }
+  }
+  .container{
+    width:50vw;
+    height: 50vh;
+    padding: 1vh 0.5vw;
+    margin: 10vh,5vw;
+  } 
+  .row{
+    width:90vw;
+    margin-top:0vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  .col{
+    flex-basis:100%;
+    overflow:hidden;
+    margin:20px 1px;
+    
+  }
+  .card{
+    width:30vw;
+    height:40vh;
+    margin:auto;
+    perspective: 1000px;
+    cursor:pointer;
+    border-radius: 10px;
+  }
+  .inner-box{
+    position:relative;
+    width:30vw;
+    height:40vh;
+    text-align: center;
+    border-radius: 10px;
+    transition:transform 1s;
+    transform-style: preserve-3d;
+  }
+  .card-front,.card-back{
+    position: absolute;
+    width:30vw;
+    height:40vh;
+    backface-visibility: hidden;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 3px 3px 9px black;
+  
+  }
+  .card-front p{
+    display:inline-block;
+    width:10vw;
+    padding:1vh 1vw;
+    margin-top:13vh;
+    margin-right: 3vw;
+    border-radius: 4px;
+    color:black;
+    font-size: 29px;
+    font-weight: bold;
+    transition:transform 1s;
+  
+  }
+  .card-back li.selected{
+    display:inline-block;
+  }
+  .card-back a{
+    text-decoration: none;
+    box-shadow: 4px 8px 12px black;
+    border: 2px solid black;
+    display:inline-block;
+    width:18vw;
+    padding:1vh 1vw;
+    margin-top:8vh;
+    margin-right: 1vw;
+    border-radius: 14px;
+    color:black;
+    font-weight: bold;
+    transition:transform 1s;
+    font-size: 25px;
+  }
+  .card-back a:hover{
+    color:aliceblue;
+    background-color: black;
+  }
+  
+  .card-front{
+    background-color:#CBCE91FF;
+    height: 40vh;
+    width: 30vw;
+  }
+  .card-back{
+    color:white;
+    background-color: #CBCE91FF;
+    transform:rotateX(180deg);
+    height: 40vh;
+    width: 30vw;
+    
+  }
+  .card:hover .inner-box{
+    transform:rotateX(-180deg);
+  }
+  .scrol{
+    margin-top: 2vh;
+    font-weight: bold;
+    font-size:25px;
+    width:99vw;
+    height: 30vh;
+  }
+  .scrol p{
+    text-align: center;
+
+  }

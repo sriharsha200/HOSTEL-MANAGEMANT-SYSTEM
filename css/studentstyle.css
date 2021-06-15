@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+html,body{
+    
+    font-family:'Times New Roman', Times, serif;
+    background-color: rgb(245, 167, 71);
+}
+::selection{
+    color: #fff;
+    background: #6665ee;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container .form{
+    background:#CBCE91FF;
+    padding: 30px 35px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container .form form .form-control{
+    height: 40px;
+    font-size: 15px;
+}
+.container .form form .forget-pass{
+    margin: -15px 0 15px 0;
+}
+.container .form form .forget-pass a{
+   font-size: 15px;
+}
+.container .form form .button{
+    background:black;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.container .form form .button:hover{
+    background: blue;
+}
+.form-control[type=submit]{
+    background:black;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.form-control[type=submit]:hover{
+    background: blue;
+}
+.container .form form .link{
+    padding: 5px 0;
+}
+.container .form form .link a{
+    color: #6665ee;
+}
+.container .login-form form p{
+    font-size: 14px;
+}
+.container .row .alert{
+    font-size: 14px;
+}
+#h4{
+	color:rgb(28, 107, 226);
+}
+/*<div class="fullscreen-bg">
+    <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+        <source src="video/big_buck_bunny.webm" type="video/webm">
+        <source src="video/big_buck_bunny.mp4" type="video/mp4">
+        <source src="video/big_buck_bunny.ogv" type="video/ogg">
+    </video>
+</div>*/
+/*forgot password css*/
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+.insert{
+    position: absolute;
+    top:0vh;
+    left:0px;
+    width: 100%;
+    padding: 5px 10px;
+    background-color: rgb(52, 236, 28);
+  }
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

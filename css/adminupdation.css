@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family:'Times New Roman', Times, serif;
+  
+}
+body{
+  background-color: rgb(245, 167, 71);
+}
+
+.label{
+   display: block;
+   font-size: 17px;
+}
+#form{
+ margin: 18vh 19vw;
+ padding: 0vh 8vw;
+ width: 60vw; 
+ border-radius: 30px;
+ border: 3px solid rgb(7, 15, 6);
+ box-shadow: 6px 12px 18px black;
+}
+#form h1{
+     text-align: center;
+     padding: 15px 5px;
+     color: rgb(8, 7, 5);
+     font-size: 40px;
+}
+.inp{
+   display: block;
+   width: 43vw;
+   text-align: center;
+   border-radius: 50px;
+   padding: 1.5vh 8vw;
+   margin: 0.5vh 0.5vw;
+}
+.drop{
+   width: 43vw;
+   border-radius: 50px;
+   padding: 1.5vh 2vw;
+   margin: 0.5vh 0.5vw;
+}
+#btn{
+   margin: 1.8vh 1.3vw;
+   border-radius: 5px;
+   padding: 1.5vh 3vw;
+}
+#btn:hover{
+   background-color: black;
+   color:white;
+}
+.insert{
+   position: absolute;
+   top:13vh;
+   width: 100%;
+   padding: 1vh 1vw;
+   background-color: rgb(184, 243, 184);
+}
+.insert1{
+  position: absolute;
+  top:13vh;
+  width: 100%;
+  padding: 1vh 1vw;
+  background-color: rgb(214, 110, 12);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

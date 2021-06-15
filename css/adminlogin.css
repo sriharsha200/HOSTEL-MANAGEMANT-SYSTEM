@@ -1,0 +1,190 @@
+*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family:'Times New Roman', Times, serif;
+  
+}
+body {
+  background-color: rgb(245, 167, 71);
+}
+.insert{
+  position: absolute;
+  top:13vh;
+  left:0px;
+  width: 100%;
+  padding: 5px 10px;
+  background-color: rgb(184, 243, 184);
+}
+nav{
+  background: rgb(184, 79, 9);
+  height:13vh;
+  width: 100%;
+}
+nav:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+nav img{
+  float: left;
+  padding-left:0.2vw;
+    margin-top: 0px;
+    border-radius:30px;
+    height:13vh;
+    width: 10vw;
+}
+
+nav ul{
+  float: right;
+  margin-top:2vh;
+  margin-right: 2vw;
+  list-style: none;
+  position: relative;
+}
+nav ul li{
+  display: inline-block;
+  background: rgb(184, 79, 9);
+  margin: 2vh 1vw;
+  height: 7vh;
+  width: 7vw;
+  border-radius: 8px;
+  
+}
+nav ul li:hover{
+  color:rgb(221, 140, 19);;
+  animation: mymove 1s infinite;
+}
+
+@keyframes mymove {
+50% {box-shadow: 5px 7px 9px rgb(221, 140, 19);}
+}
+nav ul li a{
+  color: black;
+  line-height: 7vh;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 1vh 2vw;
+}
+nav ul li a:hover{
+  color:white;
+  border-radius: 5px;
+}
+nav ul ul{
+  position: absolute;
+  top: 9vh;
+  opacity: 0;
+  visibility: hidden;
+  transition: top .3s;
+}
+
+nav ul li:hover > ul{
+  top: 7vh;
+  opacity:1;
+  visibility: visible;
+}
+nav ul ul li{
+  position: relative;
+  margin: 0px;
+  width: 13vw;
+  float: none;
+  display: list-item;
+  border-bottom: 5px solid white;
+}
+#divid
+{ 
+top:0px;
+text-align:center;
+font-size:6vh;
+color:rgb(15, 15, 15);
+}
+#divid h1{
+position: absolute;
+color: rgb(26, 24, 24);
+left: 11vw;
+top: 1vh;
+font-family: 'Times New Roman', Times, red serif;
+text-shadow: 3px 3px 3px#ebd82e;
+}
+  
+.login-box{
+  width: 25vw;
+  height: 65vh;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  top: 60vh;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+.avatar{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+
+}
+h1{
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 4vw;
+}
+.login-box p{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+.login-box input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.login-box input[type="text"], input[type="password"]
+{
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+.login-box input[type="submit"]
+{
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #1c75db;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.login-box input[type="submit"]:hover
+{
+  cursor: pointer;
+  background: #171817;
+  color: white;
+  box-shadow: 3px 5px 8px black;
+}
+
+.login-box a{
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+}
+.login-box a:hover
+{
+  color: #171817;
+}
+
+
+.header{
+  position: sticky;
+  top:0px;
+  z-index: 1;
+}
